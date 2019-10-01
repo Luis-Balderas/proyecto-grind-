@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>columnas</title>
+    <style>
+      body
+      {
+        font-family:Arial;
+      }  
+      /* cabeza */
+      .header
+      {
+        background-color:#f5eded;
+        padding: 10px;
+        border: 1px outset;
+      }
+      .container
+      {
+          
+        display: grid;
+        grid-template-columns: 350px 600px 300px auto;
+        grid-template-rows: 60px;
+            /* grid-gap: 5px;
+            height: 100vh;
+            grid-template-colums: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr); */
+        justify-items: center;
+      }
+      .item
+      {
+        background:#f5eded;
+        padding: 10px;
+        margin:0;
+      }
+      .input
+      {
+        color:black;
+        background-color:white;
+        padding: 5px;
+        border: 2px ridge;
+      }
+      /* cabeza fin */
+      /* cuerpo */
+      .cuerpo
+      {
+        display: grid;
+        grid-template: 225px 225px 225px/ 100px 400px 400px 400px;
+        grid-gap: 10px;
+        height: 100vh;
+        grid-template-areas: "lista cine cine2 cine3"
+                             "lista critica critica2 critica3"
+                             "lista perder perder2 perder3"
+      }
+      .lista
+      {
+        background: red;
+        padding: 10px;
+        border: 1px solid; 
+      }
+       .item2:nth-of-type(1)
+       {
+         align-self: inicio;
+         justify-self: final;
+       }
+       .lista
+       {
+         grid-area: lista;
+       }
+       .cine 
+       {
+         grid-area: cine;
+         background: red;
+         position: relative;
+         display: inline-block;
+         color: aliceblue;
+         text-align: center;
+       }
+      
+       .centrado
+       {
+         background-color: red;
+         position:absolute;
+         top:50%;
+         left:0%;
+         transform:translate(-%, -5%);
+       }
+       .cine2 
+       {
+         grid-area: cine2;
+         background: red;
+         position: relative;
+         display: inline-block;
+         color: aliceblue;
+         text-align: center;
+       }
+       .centrado2
+       {
+         background-color: red;
+         position:absolute;
+         top:50%;
+         left:0%;
+         transform:translate(-%, -5%);
+       }
+       .cine3 
+       {
+         grid-area: cine3;
+         background: red;
+         position: relative;
+         display: inline-block;
+         color: aliceblue;
+         text-align: center;
+       }   
+       .centrado3
+       {
+         background-color: red;
+         position:absolute;
+         top:50%;
+         left:0%;
+         transform:translate(-%, -5%);
+       } 
+       .critica
+       {
+         grid-area:critica;
+         background: red;
+         position: relative;
+         display: inline-block;
+         color: aliceblue;
+         text-align: center;
+       }
+       .centrado4
+       {
+         background-color: red;
+         position:absolute;
+         top:50%;
+         left:0%;
+         transform:translate(-%, -5%);
+       } 
+       .critica2
+       {
+         grid-area:critica2;
+         background: red;
+         position: relative;
+         display: inline-block;
+         color: aliceblue;
+         text-align: center;
+       }
+       .centrado5
+       {
+         background-color: red;
+         position:absolute;
+         top:50%;
+         left:0%;
+         transform:translate(-%, -5%);
+       } 
+       .critica3
+       {
+         grid-area:critica3;
+         background: red;
+         position: relative;
+         display: inline-block;
+         color: aliceblue;
+         text-align: center;
+       }
+       .centrado6
+       {
+         background-color: red;
+         position:absolute;
+         top:50%;
+         left:0%;
+         transform:translate(-%, -5%);
+       } 
+       .perder
+       {
+         grid-area:perder;
+         background: red;
+         position: relative;
+         display: inline-block;
+         color: aliceblue;
+         text-align: center;
+       }
+       .centrado7
+       {
+         background-color: red;
+         position:absolute;
+         top:50%;
+         left:0%;
+         transform:translate(-%, -5%);
+       } 
+       .perder2
+       {
+         grid-area:perder2;
+         background: red;
+         position: relative;
+         display: inline-block;
+         color: aliceblue;
+         text-align: center;
+       }
+       .centrado8
+       {
+         background-color: red;
+         position:absolute;
+         top:50%;
+         left:0%;
+         transform:translate(-%, -5%);
+       } 
+       .perder3
+       {
+         grid-area:perder3;
+         background: red;
+         position: relative;
+         display: inline-block;
+         color: aliceblue;
+         text-align: center;
+       }
+       .centrado9
+       {
+         background-color: red;
+         position:absolute;
+         top:50%;
+         left:0%;
+         transform:translate(-%, -5%);
+       } 
+       .barra1
+       {
+        grid-area:barra1;
+         background:red;
+        padding: 10px;
+        
+       }   
+      .barra2
+       {
+        grid-area:barra2;
+         background:red;
+        padding: 10px;
+       }
+       .barra3
+       {
+        grid-area:barra3;
+         background:red;
+        padding: 10px;
+       }
+
+       } 
+       .ajustes
+       {
+        grid-area:ajustes;
+         background:red;
+        padding: 10px;
+        
+       }
+      /* cuerpo fin */
+      
+      
+     
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <section class="container">
+        <div class="item"><img src="images/title.png" alt=""></div>
+        
+        <div class="item"> <input type="text" size="60"  class="input" placeholder="Busca tu pelicula, actor, actriz o director favorito"></div>
+       
+        <div class="item"><img src="images/uni.png" alt=""></div>
+      </section>
+    </header>
+    <br>
+    <body>
+      <section class="cuerpo">
+       <div class="lista">
+       <div class="barra1"> <img src="images/home.png"alt=""> <br> Home</div>
+       <div class="barra2"> <img src="images/Tredin.png" alt=""> <br> Treding</div>
+       <div class="barra3"> <img src="images/Mas-like.png" alt=""><br> Mas like</div>
+       <br><br><br><br><br><br><br><br><br><br><br>
+       <div class="ajustes"> <img src="images/ajustes.png" alt=""><br> Ajustes</div>
+       </div>
+      <div class="cine">
+          <img src="images/harry.png" alt="">
+          <div class="centrado">El día de su cumpleaños, Harry Potter descubre que es 
+            hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. 
+             Debe asistir a una famosa escuela de magia y hechicería, donde entabla 
+              una amistad con dos jóvenes que se convertirán en sus compañeros de aventura.</div>
+      </div>
+      <div class="cine2">
+        <img src="images/harry.png" alt="">
+        <div class="centrado2">El día de su cumpleaños, Harry Potter descubre que es 
+            hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. 
+             Debe asistir a una famosa escuela de magia y hechicería, donde entabla 
+              una amistad con dos jóvenes que se convertirán en sus compañeros de aventura.</div>
+      </div>
+      <div class="cine3">
+        <img src="images/harry.png" alt="">
+        <div class="centrado">El día de su cumpleaños, Harry Potter descubre que es 
+            hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. 
+             Debe asistir a una famosa escuela de magia y hechicería, donde entabla 
+              una amistad con dos jóvenes que se convertirán en sus compañeros de aventura.</div>
+      </div>
+      <div class="critica">
+        <img src="images/harry.png" alt="">
+        <div class="centrado3">El día de su cumpleaños, Harry Potter descubre que es 
+            hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. 
+             Debe asistir a una famosa escuela de magia y hechicería, donde entabla 
+              una amistad con dos jóvenes que se convertirán en sus compañeros de aventura.</div>
+      </div>
+      <div class="critica2">
+        <img src="images/harry.png" alt="">
+        <div class="centrado4">El día de su cumpleaños, Harry Potter descubre que es 
+            hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. 
+             Debe asistir a una famosa escuela de magia y hechicería, donde entabla 
+              una amistad con dos jóvenes que se convertirán en sus compañeros de aventura.</div>
+      </div>
+      <div class="critica3">
+        <img src="images/harry.png" alt="">
+        <div class="centrado5">El día de su cumpleaños, Harry Potter descubre que es 
+            hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. 
+             Debe asistir a una famosa escuela de magia y hechicería, donde entabla 
+              una amistad con dos jóvenes que se convertirán en sus compañeros de aventura.</div>
+      </div>
+      <div class="perder">
+        <img src="images/harry.png" alt="">
+        <div class="centrado6">El día de su cumpleaños, Harry Potter descubre que es 
+            hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. 
+             Debe asistir a una famosa escuela de magia y hechicería, donde entabla 
+              una amistad con dos jóvenes que se convertirán en sus compañeros de aventura.</div>
+      </div>
+      <div class="perder2">
+        <img src="images/harry.png" alt="">
+        <div class="centrado7">El día de su cumpleaños, Harry Potter descubre que es 
+            hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. 
+             Debe asistir a una famosa escuela de magia y hechicería, donde entabla 
+              una amistad con dos jóvenes que se convertirán en sus compañeros de aventura.</div>
+      </div>
+      <div class="perder3">
+        <img src="images/harry.png" alt="">
+        <div class="centrado8">El día de su cumpleaños, Harry Potter descubre que es 
+            hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. 
+             Debe asistir a una famosa escuela de magia y hechicería, donde entabla 
+              una amistad con dos jóvenes que se convertirán en sus compañeros de aventura.</div>
+      </div>
+      </section>
+    </body>
+
+  </body>
+</html>
